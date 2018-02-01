@@ -5,7 +5,7 @@
 <script src="../../build/aframe-ar.js"></script>
 
 <!-- to load .ply model -->
-<!--<script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>-->
+<script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
 
 <body style='margin : 0px; overflow: hidden;'>
 	
@@ -20,7 +20,7 @@
 		<a-assets>
 			<a-asset-item id="assetAframe" src="models/ply/building.ply"></a-asset-item>
 		</a-assets>
-		<a-entity ply-model="src: #assetAframe" rotation='-90 0 0'scale='1 1 1'></a-entity>		
+		<a-entity ply-model="src: #assetAframe" rotation='0 45 0'scale='1 1 1'></a-entity>		
 		
 		<a-marker-camera preset='hiro'></a-marker-camera>
 		
