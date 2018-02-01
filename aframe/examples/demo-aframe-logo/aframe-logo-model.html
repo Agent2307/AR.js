@@ -15,15 +15,29 @@
         <!-- <a-scene embedded arjs='sourceType: webcam; sourceWidth: 240; sourceHeight: 180;'> -->		
 	<!-- <a-scene arjs='sourceType: image; sourceUrl:../../data/images/screenshot.png'> -->
 	<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
-
-		<a-assets>
+	<a-text value="Hello, World!"></a-text>
+		<!--<a-assets>
 			<a-asset-item id="assetAframe" src="models/ply/building.ply"></a-asset-item>
 		</a-assets>
+		<a-entity ply-model="src: #assetAframe" rotation='-45 0 0'scale='1 11'></a-entity>-->
 
-		<!-- <a-marker type='unknown'> -->
-		<a-entity ply-model="src: #assetAframe" rotation='-45 0 0'scale='1 11'></a-entity>
-
-		<a-marker-camera preset='hiro'></a-marker-camera>
+		<!-- define your gltf asset -->
+		<a-assets>
+		  <a-asset-item id="tree" src="/path/to/tree.gltf"></a-asset-item>
+		</a-assets>
+		<!-- use your gltf model -->
+		<a-entity gltf-model="##tree"></a-entity>
+		
+		
+		
+		<!--<a-marker-camera preset='hiro'></a-marker-camera>-->
+		<!-- define your markers -->
+		<a-marker preset='hiro'>
+		  <!-- here define the content to display on top of the marker -->
+		  <a-box position='0 0.5 0' material='color: red;'></a-box>
+		</a-marker>
+		<!-- define a simple camera -->
+		<a-entity camera></a-entity>
 	</a-scene>
 </body>
 </html>
