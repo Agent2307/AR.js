@@ -16,17 +16,13 @@
 	<!-- <a-scene arjs='sourceType: image; sourceUrl:../../data/images/screenshot.png'> -->
 	<!-- <a-scene embedded arjs='sourceType: image; sourceUrl:../../data/images/armchair.jpg;'> -->
 	<a-assets>
-		<a-asset-item id="assetAframe" src="models/ply/rainbow.ply"></a-asset-item>
+		<a-asset-item id="assetAframe" src="models/ply/building.ply"></a-asset-item>
 	</a-assets>
 		
-	<!--<a-marker-camera preset='hiro'>
+	<a-marker-camera preset='hiro'>
 	</a-marker-camera>
 		<a-entity ply-model="src: #assetAframe" rotation='0 0 0'scale='0.3 0.3 0.3'></a-entity>
-	</a-scene>-->
-	
-	<a-marker preset="hiro">
-            <a-entity ply-model="src: #assetAframe" rotation='45 0 0'scale='0.3 0.3 0.3' material='color: yellow;'></a-entity>
-  	</a-marker>
-  	<a-entity camera></a-entity>
+	</a-scene>
+
 </body>
 </html>
