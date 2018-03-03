@@ -9,22 +9,23 @@
 
 <body style='margin : 0px; overflow: hidden;'>
 		
-	<div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
-		<a href="https://github.com/jeromeetienne/AR.js/" target="_blank">AR.js</a> - Two-ways Portal 360 for a-frame by <a href='https://twitter.com/jerome_etienne' target='_blank'>@jerome_etienne</a>
+	<div style='position: fixed; top: 10px; width:100%; height:300px; background-color: white; text-align: center; z-index: 1;'>
+		<img src='https://i.imgur.com/qML5y1w.png' position='0 0 10' scale='1 1 1' rotation='0 90 0'/>
+		Two-ways Portal 360 for a-frame by
 	</div>
 	
 	
 	
 	<a-scene embedded arjs='sourceType: webcam'>
-		<img src='https://i.imgur.com/qML5y1w.png' position='0 0 10' scale='1 1 1' rotation='0 90 0'/>
+		
 		<a-assets>
 			<a-asset-item id="assetAframe" src="models/ply/building.ply"></a-asset-item>
 			<a-asset-item id="assetB" src="models/ply/robot.ply"></a-asset-item>
 		</a-assets>
 		<a-entity ply-model="src: #assetAframe" position='0 1 9' rotation=' 0 0 0' scale='0.3 0.3 0.3'"></a-entity>
 		<a-entity ply-model="src: #assetB" position='3 0 10' rotation=' 0 0 0' scale='0.3 0.3 0.3'"></a-entity>
-		<a-camera-static/>
-		<!--<a-camera position='0 0 2' user-height='0'></a-camera>-->
+		
+		<a-camera position='0 0 2' user-height='0'></a-camera>
 		<!--<a-marker-camera preset='hiro'></a-marker-camera>-->										       
 	</a-scene>
 	
