@@ -13,6 +13,9 @@
 	<div style='position: absolute; right:10px; width:100px; padding: 1px;'/>
 		<img src='https://i.imgur.com/HYjoPER.png' width="100%"/>
     </div>
+    <div style='font-family:Arial; text-align:center; position: absolute; left: 40%; bottom:120px; width:100px; padding: 1px;'/>
+		300m <img src='https://i.imgur.com/uueinaQ.png' width="100%"/>
+    </div>
     <div style='font-family:Arial; position: absolute; left:10px; width:50px; padding: 20px;'/>
 		<img src='https://i.imgur.com/VWNu9fW.png' width="100%"/><b>COMO</b>
     </div>
@@ -23,13 +26,13 @@
 	<a-scene embedded arjs='sourceType: webcam'>
 		
 		<a-assets>
-			<a-asset-item id="modelA" src="models/ply/building.ply"></a-asset-item>
-			<a-asset-item id="modelB" src="models/ply/robot.ply"></a-asset-item>
-			<a-asset-item id="modelC" src="models/ply/rainbow.ply"></a-asset-item>
+			<a-asset-item id="modelA" src="models/ply/arrow.ply"></a-asset-item>
+			<a-asset-item id="modelB" src="models/ply/box.ply"></a-asset-item>
+			
 		</a-assets>
-		<a-entity ply-model="src: #modelA" position='0 1 9' rotation=' 0 0 0' scale='0.3 0.3 0.3'"></a-entity>
-		<a-entity ply-model="src: #modelB" position='2 0 5' rotation=' 0 0 0' scale='0.3 0.3 0.3'"></a-entity>
-		<a-entity ply-model="src: #modelC" position='3 0 2' rotation=' 0 0 0' scale='0.3 0.3 0.3'"></a-entity>
+		<a-entity ply-model="src: #modelA" position='0 2 7' rotation=' 0 0 0' scale='0.3 0.3 0.3'"></a-entity>
+		<a-entity ply-model="src: #modelB" position='2 2 5' rotation=' 0 0 0' scale='0.3 0.3 0.3'"></a-entity>
+		
 		
 		<a-camera position='0 0 2' user-height='0'></a-camera>
 		<!--<a-marker-camera preset='hiro'></a-marker-camera>-->										       
