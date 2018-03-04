@@ -6593,7 +6593,7 @@ var ARjs = ARjs || {}
 ARjs.SessionDebugUI = function(arSession, tangoPointCloud){
 	var trackingBackend = arSession.arContext.parameters.trackingBackend
 
-	this.domElement = document.createElement('div')
+	this.domElement = document.createElement('')
 	this.domElement.style.color = 'rgba(0,0,0,0.9)'
 	this.domElement.style.backgroundColor = 'rgba(127,127,127,0.5)'
 	this.domElement.style.display = 'inline-block'
@@ -6615,10 +6615,10 @@ ARjs.SessionDebugUI = function(arSession, tangoPointCloud){
 	//		current-tracking-backend
 	//////////////////////////////////////////////////////////////////////////////
 
-	var domElement = document.createElement('span')
-	domElement.style.display = 'block'
+	var domElement = document.createElement('')
+	domElement.style.display = ''
 	this.domElement.appendChild(domElement)
-	domElement.innerHTML = '<b>trackingBackend</b> : ' +trackingBackend
+	domElement.innerHTML = '' +trackingBackend
 	
 	//////////////////////////////////////////////////////////////////////////////
 	//		augmented-websites
@@ -6626,8 +6626,8 @@ ARjs.SessionDebugUI = function(arSession, tangoPointCloud){
 
 	if( ARjs.SessionDebugUI.AugmentedWebsiteURL ){
 		var domElement = document.createElement('a')
-		domElement.innerHTML = 'Share on augmented-websites'
-		domElement.style.display = 'block'
+		domElement.innerHTML = ''
+		domElement.style.display = ''
 		// domElement.setAttribute('target', '_blank')
 		domElement.href = ARjs.SessionDebugUI.AugmentedWebsiteURL + '?'+location.href
 		this.domElement.appendChild(domElement)						
@@ -8621,9 +8621,9 @@ AFRAME.registerSystem('arjs', {
 				}
 				
 				// fixing a-frame css
-				var buttonElement = document.querySelector('.a-enter-vr')
+				var buttonElement = document.querySelector('')
 				if( buttonElement ){
-					buttonElement.style.position = 'fixed'
+					buttonElement.style.position = ''
 				}
 			}
 
