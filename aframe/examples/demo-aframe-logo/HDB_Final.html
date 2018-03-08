@@ -4,7 +4,7 @@
 <script src="../vendor/aframe/build/aframe.min.js"></script>
 <!-- include ar.js -->
 <script src="../../build/aframe-ar.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
 <!-- to load .ply model -->
 <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
@@ -12,37 +12,29 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+<style>
+#example {
+  position: relative;
+}
+#example-checkbox {
+  display: none;
+}
+#example-checkbox:checked + #example:after {
+  content: url(https://i.imgur.com/jOIhU8m.png);
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+</style>
+
 <body>
+<div class="w3-container">
 <!-- avatar -->
 <a href="https://agent2307.github.io/AR.js/aframe/examples/demo-aframe-logo/Profile_page.html"><img class="w3-cell" src="https://i.imgur.com/jOIhU8m.png" style="width:100px"/>
 </a>
-
-<div class="w3-cell-row">
-
-<div class="w3-container w3-cell">
-<div class="w3-animate-zoom" style="text-align:center">
-  <a href="https://agent2307.github.io/AR.js/aframe/examples/demo-aframe-logo/Event_screen.html">
-  
-  <div class="w3-round-large w3-padding w3-tag w3-tiny w3-red">
-  Shootout<p>7pm</p> 8 Joined</div>
-  <p><i class="w3-jumbo fa fa-map-marker"></i></p>
-  
-  </a>
-</div>
-</div>
-
-<div class="w3-container w3-display-right">
-<div class="w3-round-xlarge w3-padding w3-tag w3-tiny w3-green w3-opacity">
-Fernvale Runner</div>
-</div>
-
-<div class="w3-container w3-display-left">
-<div class="w3-round-xlarge w3-padding w3-tag w3-small w3-yellow w3-opacity-max w3-cell-right">Zumba at the Park</div>
-</div>
-
-</div>
-
-
 <a-scene embedded arjs='sourceType: webcam'>
 		<a-assets>
 			<a-asset-item id="modelA" src="models/ply/arrow.ply"></a-asset-item>
@@ -53,24 +45,65 @@ Fernvale Runner</div>
 		<a-entity ply-model="src: #modelB" position='3 0 7' rotation=' 0 0 0' scale='0.3 0.3 0.3'"></a-entity>
 <a-camera position='0 0 2' user-height='0'></a-camera>							  
 </a-scene>
-	
+</div>
+
+<div class="w3-cell-row">
+
+      <div class="w3-container">
+
+              <div class="w3-animate-zoom" style="text-align:center">
+                <a href="https://agent2307.github.io/AR.js/aframe/examples/demo-aframe-logo/Event_screen.html">
+
+                <div class="w3-round-large w3-padding w3-tag w3-small w3-yellow" style="width:120px">
+                <b>Shootout</b>
+
+                  <div class="w3-cell">
+                  7pm</div>
+                  
+                  
+                  <div class="w3-padding w3-cell">8 <i class="w3-small far fa-user"></i></div>
+              </div>
+                </a>
+                <p><i class="w3-jumbo fa fa-map-marker"></i></p>
+
+        </div>
+</div>
+
+<div class="w3-container w3-display-right">
+<div class="w3-round-xlarge w3-padding w3-tag w3-tiny w3-green w3-opacity">
+Fernvale Runner</div>
+</div>
+
+<div class="w3-container">
+<div class="w3-round-xlarge w3-padding w3-tag w3-small w3-yellow w3-opacity-max w3-cell-right">Zumba at the Park</div>
+</div>
+
+</div>	
 
 <footer>
-<div class="w3-bottom w3-cell-row">
+<div class="w3-bottom w3-cell-row" style="text-align:center">
 
-<div class="w3-padding w3-container w3-white w3-cell ">
-  <h3></h3>
-</div>
+        
+        
+        <div class="w3-cell-bottom w3-container w3-cell" >
+          
+              <input id="example-checkbox" type="checkbox">
+              <label class="w3-button" for="example-checkbox" id="example">
+                <i class="w3-xxxlarge fas fa-crosshairs"></i>
+            </label>
+              <p class="w3-tiny">Track</p>
+		</div>
 
-<div class="w3-container w3-cell w3-center">
- <img class="w3-padding w3-spin" src='https://i.imgur.com/uueinaQ.png' width="20%"/>
-  <p>300m</p> 
-</div>
-<div class="w3-cell-bottom w3-container w3-cell" style="width:100px">
- <a href="https://agent2307.github.io/AR.js/aframe/examples/demo-aframe-logo/List_screen.html">
-<i class="w3-jumbo fa fa-list-alt"></i><a/>
-<p class="w3-tiny">List Activities</p>
-</div>
+        <div class="w3-container w3-cell">
+              <img class="w3-padding w3-spin" src='https://i.imgur.com/uueinaQ.png' width="90px"/>
+              <p>300m</p> 
+        </div>
+          
+        <div class="w3-cell-bottom w3-container w3-cell">
+                <a href="https://agent2307.github.io/AR.js/aframe/examples/demo-aframe-logo/List_screen.html">
+                  <i class="w3-xxxlarge fas fa-search"></i><a/>
+                  <p class="w3-tiny">List Activities</p>
+        </div>
 
 </div>
 </footer>
