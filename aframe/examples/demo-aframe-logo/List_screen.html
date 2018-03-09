@@ -3,9 +3,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 <body>
-
+<style>
+#example {
+  position: relative;
+}
+#example-checkbox {
+  display: none;
+}
+#example-checkbox:checked + #example:after {
+  content: "Joined!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color:black;
+  padding-top:10px;
+  background: yellow;
+}
+</style>
 <header class="w3-top w3-bar w3-blue">
   <h5 class="w3-bar-item">Activities</h5>
  
@@ -14,61 +32,77 @@
   
 <div class="w3-container" style="margin-top:70px">
 
+<!-- Search bar -->
+      <div class="w3-cell-row">
+            <input class="w3-small w3-cell w3-input w3-border" type="text" placeholder="Search" style="width:80%";>
+          <button class="w3-button w3-xlarge "><i class="fa fa-search"></i></button>
+      </div>
 
-<div class="w3-cell-row ">
-  <input class="w3-cell w3-input w3-border" type="text" style="width:80%";>
-<button class="w3-cell w3-button w3-xlarge "><i class="fa fa-search"></i></button>
-</div>
 
-  <hr>
-<div class="w3-cell-row">
-  <div class="w3-cell" style="width:30%">
-    <img class="w3-circle" src="https://i.imgur.com/jOIhU8m.png" style="width:100%">
-  </div>
-   
-   
-  <div class="w3-cell w3-container">
-   <a class="" href="https://agent2307.github.io/AR.js/aframe/examples/demo-aframe-logo/Event_screen.html">
-    <h3>Basketball</h3></a>
-    
-    <button class="w3-button w3-green w3-border w3-round-large">Contact</button>
-    <button class="w3-button w3-green w3-border w3-round-large">Join</button>
-    <p>Lets meet 8pm!</p>
-    <p>7 Joined</p>
-  </div>
-</div>  
-<hr>
-<div class="w3-cell-row">
-  <div class="w3-cell" style="width:30%">
-    <img class="w3-circle" src="https://i.imgur.com/jOIhU8m.png" style="width:100%">
-  </div>
-  <div class="w3-cell w3-container">
-    <h3>Basketball</h3>
-    <button class="w3-button w3-green w3-border w3-round-large">Contact</button>
-    <button class="w3-button w3-green w3-border w3-round-large">Join</button>
-    <p>Lets meet 8pm!</p>
-    <p>7 Joined</p>
-  </div>
+<div class="w3-container w3-cell-row">
+                     <div class="w3-cell w3-xxlarge ">
+                        <i class="fas fa-basketball-ball"></i>
+                      </div>
+                      
+                     <div>
+                         <a href="https://agent2307.github.io/AR.js/aframe/examples/demo-aframe-logo/Event_screen.html"><p>Shootout<span class="w3-right w3-small w3-tag w3-yellow">7 Joined</span></p></a>
+                         Lets meet 8pm!<p>
+                          <input id="example-checkbox" type="checkbox">
+                          <label class="w3-block w3-button w3-green w3-round-xxlarge" for="example-checkbox" id="example">Join <i class="w3-large far fa-user"></i></label>
+					</div>
+
 </div>
 <hr>
-<div class="w3-cell-row">
-  <div class="w3-cell" style="width:30%">
-    <img class="w3-circle" src="https://i.imgur.com/jOIhU8m.png" style="width:100%">
-  </div>
-  <div class="w3-cell w3-container">
-    <h3>Basketball</h3>
-    <button class="w3-button w3-green w3-border w3-round-large">Contact</button>
-    <button class="w3-button w3-green w3-border w3-round-large">Join</button>
-    <p>Lets meet 8pm!</p>
-    <p>7 Joined</p>
-  </div>
+<div class="w3-container w3-cell-row">
+                     <div class="w3-cell w3-xxlarge ">
+                        <i class="fas fa-basketball-ball"></i>
+                      </div>
+                      
+                     <div>
+                         <a href="https://agent2307.github.io/AR.js/aframe/examples/demo-aframe-logo/Event_screen.html"><p>Shootout<span class="w3-right w3-small w3-tag w3-yellow">7 Joined</span></p></a>
+                         Lets meet 8pm!<p>
+                          <input id="example-checkbox" type="checkbox">
+                          <label class="w3-block w3-button w3-green w3-round-xxlarge" for="example-checkbox" id="example">Join <i class="w3-large far fa-user"></i></label>
+					</div>
+
+</div>
+
+
+
+
+<hr>
+<div class="w3-container w3-cell-row">
+                     <div class="w3-cell w3-xxlarge ">
+                        <i class="fas fa-basketball-ball"></i>
+                      </div>
+                      
+                     <div>
+                         <a href="https://agent2307.github.io/AR.js/aframe/examples/demo-aframe-logo/Event_screen.html"><p>Shootout<span class="w3-right w3-small w3-tag w3-yellow">7 Joined</span></p></a>
+                         Lets meet 8pm!<p>
+                          <input id="example-checkbox" type="checkbox">
+                          <label class="w3-block w3-button w3-green w3-round-xxlarge" for="example-checkbox" id="example">Join <i class="w3-large far fa-user"></i></label>
+					</div>
+
 </div>
 <hr>
+<div class="w3-container w3-cell-row">
+                     <div class="w3-cell w3-xxlarge ">
+                        <i class="fas fa-basketball-ball"></i>
+                      </div>
+                      
+                     <div>
+                         <a href="https://agent2307.github.io/AR.js/aframe/examples/demo-aframe-logo/Event_screen.html"><p>Shootout<span class="w3-right w3-small w3-tag w3-yellow">7 Joined</span></p></a>
+                         Lets meet 8pm!<p>
+                          <input id="example-checkbox" type="checkbox">
+                          <label class="w3-block w3-button w3-green w3-round-xxlarge" for="example-checkbox" id="example">Join <i class="w3-large far fa-user"></i></label>
+					</div>
+
 </div>
 
-<footer class="w3-container w3-bottom w3-theme w3-margin-top">
 
-</footer>
+
+
+</div>
 
 
 </body>
