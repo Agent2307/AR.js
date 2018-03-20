@@ -100,19 +100,16 @@ input[type=text], input[type=password] {
              </div>
              
     
-      <div class="w3-container w3-cell-row w3-bottom">
+      <div class="w3-cell-row w3-bottom w3-small">
                <div class="w3-cell">
-               		<button class="w3-button w3-block w3-white w3-round-large">Contact</button>
-				</div>
-
-				 <div class="w3-cell">
-                        <input onclick="document.getElementById('id01').style.display='block'" id="example-checkbox" type="checkbox">
-                        <label class="w3-button w3-block w3-green w3-round-large" for="example-checkbox" id="example">Join <i class="w3-large far fa-user"></i></label>
+               		<button class="w3-button w3-white w3-round-large">Contact</button>
+				<input onclick="document.getElementById('id01').style.display='block'" id="example-checkbox" type="checkbox">
+                        <label class="w3-button w3-green w3-round-large" for="example-checkbox" id="example">Join <i class="w3-large far fa-user"></i></label>
 				</div>
       
            <div class="w3-container w3-cell w3-tiny" style="text-align:center">
-                   <a href="https://api.whatsapp.com/send?text=Check%20out%20MobiGyaan.com">
-                   <i class="w3-xxlarge fas fa-crosshairs"></i><a/><p>AR</p>
+                   <a href="https://api.whatsapp.com/send?text=I%20joined%20an%20event!%20Join%20here%20http%3A%2F%2Fbit.ly%2F2GJ15aj">
+                   <i class="w3-xxlarge fab fa-whatsapp"></i><a/><p>Share</p>
 
               </div>
 
@@ -133,7 +130,7 @@ input[type=text], input[type=password] {
       <label for="avl"><b>Availability 3</b></label>
       <input type="date" name="avail3">
        <p/>
-      <button class="w3-green w3-btn w3-cell-row" type="submit" formaction="https://api.whatsapp.com/send?text=Check%20out%20MobiGyaan.com">Submit</button>
+      <button class="w3-green w3-btn w3-cell-row" type="button" onclick="document.getElementById('id01').style.display='none'">Submit</button>
       <p/>
       <button class="w3-red w3-btn w3-cell-row" type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
 
@@ -153,10 +150,6 @@ window.onclick = function(event) {
     }
 }
 </script>
-
-
-
-
 
 </div>
 </div>
