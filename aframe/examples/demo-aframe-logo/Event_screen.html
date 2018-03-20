@@ -15,7 +15,7 @@
   display: none;
 }
 #example-checkbox:checked + #example:after {
-  content: "Joined!";
+  content: "Share";
   position: absolute;
   top: 0;
   left: 0;
@@ -25,6 +25,58 @@
   padding-top:8px;
   background: yellow;
 }
+</style>
+<style>
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 60px;
+    color:black;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
 </style>
 </head>
 
@@ -54,7 +106,7 @@
 				</div>
 
 				 <div class="w3-container w3-cell">
-                        <input id="example-checkbox" type="checkbox">
+                        <input onclick="document.getElementById('id01').style.display='block'" id="example-checkbox" type="checkbox">
                         <label class="w3-button w3-block w3-green w3-round-large" for="example-checkbox" id="example">Join <i class="w3-large far fa-user"></i></label>
 				</div>
       
@@ -63,6 +115,52 @@
                    <i class="w3-xxlarge fas fa-crosshairs"></i><a/><p>Track</p>
 
               </div>
+              
+              <div class="w3-container w3-cell w3-tiny" style="text-align:center">
+                   <a href="https://api.whatsapp.com/send?text=I%20created%20an%20event!%20Join%20here%20http%3A%2F%2Fbit.ly%2F2GJ15aj">
+                   <i class="w3-xxlarge fab fa-whatsapp"></i><a/><p>Invite</p>
+
+              </div>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+    
+
+    <div class="w3-container w3-padding-large">
+      <label for="name"><b>Name</b></label>
+      <input type="text" name="name" required>
+
+      <label for="avl1"><b>Availability 1</b></label>
+      <input type="date" name="avail1" required><p/>
+      <label for="avl2"><b>Availability 2</b></label>
+      <input type="date" name="avail2"><p/>
+      <label for="avl"><b>Availability 3</b></label>
+      <input type="date" name="avail3">
+       <p/>
+      <button class="w3-green w3-btn w3-cell-row" type="button" onclick="document.getElementById('id01').style.display='none'">Submit</button>
+      <p/>
+      <button class="w3-red w3-btn w3-cell-row" type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
+
+
+   </div> 
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
 
 
 
